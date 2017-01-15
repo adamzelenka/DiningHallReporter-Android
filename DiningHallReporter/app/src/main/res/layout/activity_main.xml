@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="awesomeco.com.dininghallreporter.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a Dining Hall"
+        android:textSize="24sp"
+        android:id="@+id/dininghalltext" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/dininghalllist"
+        android:layout_marginTop="5dp"
+        android:divider="#0000CC"
+        android:dividerHeight="0.3dp"
+        android:background="@drawable/layout_border"
+        android:choiceMode="singleChoice"
+        android:listSelector="@color/lightGrey" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Food Vendor"
+        android:textSize="24sp"
+        android:id="@+id/foodvendortext"
+        android:layout_marginTop="10dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/foodvendorlist"
+        android:layout_marginTop="5dp"
+        android:divider="#0000CC"
+        android:dividerHeight="0.1dp"
+        android:background="@drawable/layout_border"
+        android:choiceMode="singleChoice"
+        android:listSelector="@color/lightGrey"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linetimetext"
+        android:text="Time in Line"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/linetime"
+            android:max="50"
+            android:progress="25" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:id="@+id/linetimetext2"
+            android:text="25"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/layout_border"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/preptimetext"
+        android:text="Food Preparation Time"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/preptime"
+            android:max="50"
+            android:progress="25" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:id="@+id/preptimetext2"
+            android:text="25"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/layout_border"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/submitbutton"
+            android:text="Submit Data" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/resetbutton"
+            android:layout_weight="1"
+            android:text="Reset"/>
+
+    </LinearLayout>
+
+</LinearLayout>

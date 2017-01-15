@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">DiningHallReporter</string>
+    <string-array name="dininghalls">
+        <item>ABP at GLC</item>
+        <item>ABP at Goodwin</item>
+        <item>D2</item>
+        <item>Deet\'s Place</item>
+        <item>DXpress</item>
+        <item>Food Trucks</item>
+        <item>Hokie Grill</item>
+        <item>Owens Food Court</item>
+        <item>Squires Food Court</item>
+        <item>Turner Place</item>
+        <item>Vet Med Cafe</item>
+        <item>West End Market</item>
+    </string-array>
+
+    <string-array name="abpglcvendors">
+        <item>No additional food vendors.</item>
+    </string-array>
+
+    <string-array name="abpgoodwinvendors">
+        <item>No additional food vendors.</item>
+    </string-array>
+
+    <string-array name="d2vendors">
+        <item>East Side Deli</item>
+        <item>Eden\'s</item>
+        <item>Gauchos</item>
+        <item>La Patisserie</item>
+        <item>Mangia!</item>
+        <item>Olives</item>
+        <item>Pan Asia</item>
+        <item>Salsas</item>
+    </string-array>
+
+    <string-array name="deetsplacevendors">
+        <item>No additional food vendors.</item>
+    </string-array>
+
+    <string-array name="dxpressvendors">
+        <item>No additional food vendors.</item>
+    </string-array>
+
+    <string-array name="foodtrucksvendors">
+        <item>Periodic Table</item>
+        <item>The Grillfield</item>
+    </string-array>
+
+    <string-array name="hokiegrillvendors">
+        <item>Blue Ridge Barbecue</item>
+        <item>Chick-fil-A</item>
+        <item>Pizza Hut</item>
+    </string-array>
+
+    <string-array name="owensvendors">
+        <item>Bowl Dynasty</item>
+        <item>Carvery</item>
+        <item>Farms &amp; Fields Project</item>
+        <item>Flip\'s</item>
+        <item>Frank\'s Deli</item>
+        <item>Freshen\'s</item>
+        <item>The Garden</item>
+        <item>La Cantina</item>
+        <item>Lotsa Pasta</item>
+        <item>The Oasis</item>
+        <item>Philly City</item>
+        <item>Sweet Temptations</item>
+    </string-array>
+
+    <string-array name="squiresvendors">
+        <item>Au Bon Pain</item>
+        <item>Burger \'37</item>
+    </string-array>
+
+    <string-array name="turnervendors">
+        <item>1872 Fire Grill</item>
+        <item>Atomic Pizzeria</item>
+        <item>Bruegger\'s Bagels</item>
+        <item>Dolci e Caffe</item>
+        <item>Jamba Juice</item>
+        <item>Origami</item>
+        <item>Q\'doba Mexican Grill</item>
+        <item>Soup Garden</item>
+    </string-array>
+
+    <string-array name="vetmedvendors">
+        <item>No additional food vendors.</item>
+    </string-array>
+
+    <string-array name="westendvendors">
+        <item>Bistro Firenze</item>
+        <item>Cutting Edge</item>
+        <item>Fighting Gobbler</item>
+        <item>JP\'s Chop House</item>
+        <item>Leaf and Ladle</item>
+        <item>Smoothies</item>
+        <item>Wired</item>
+    </string-array>
+
+</resources>
