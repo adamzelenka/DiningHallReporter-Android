@@ -16,19 +16,13 @@ public class Report {
     private int prepTime;
     private Calendar reportTime;
 
-    public Report(String hall, String vend, int line, int prep) {
-        diningHall = hall;
-        vendor = vend;
-        lineTime = line;
-        prepTime = prep;
-        reportTime = Calendar.getInstance();
-    }
+    private final int MEDIAN = R.integer.median;
 
     public Report() {
         diningHall = "";
         vendor = "";
-        lineTime = 25;
-        prepTime = 25;
+        lineTime = MEDIAN;
+        prepTime = MEDIAN;
         reportTime = Calendar.getInstance();
     }
 
@@ -81,8 +75,16 @@ public class Report {
         String minute = Integer.toString(reportTime.MINUTE);
         String second = Integer.toString(reportTime.SECOND);
         return "{\"" + diningHall + "\", \"" + vendor + "\", \"" + dayOfWeek + "\", " + hour +
-                ", " + second + ", " + Integer.toString(lineTime) + ", " +
-                Integer.toString(prepTime) + "}";
+                ", " + second + ", " + String.format("%s", lineTime) + ", " +
+                String.format("%s", prepTime) + "}";
+    }
+
+    public void clear() {
+        diningHall = "";
+        vendor = "";
+        lineTime = MEDIAN;
+        prepTime = MEDIAN;
+        reportTime = Calendar.getInstance();
     }
 
 }
