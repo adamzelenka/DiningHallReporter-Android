@@ -75,8 +75,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:id="@+id/linetime"
-                    android:max="@integer/max"
-                    android:progress="@integer/median" />
+                    android:max="@string/max"
+                    android:progress="@string/median" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -111,8 +111,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:id="@+id/preptime"
-                    android:max="@integer/max"
-                    android:progress="@integer/median" />
+                    android:max="@string/max"
+                    android:progress="@string/median" />
 
                 <TextView
                     android:layout_width="match_parent"

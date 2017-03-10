@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">DiningHallReporter</string>
     <string name="median">25</string>
+    <string name="max">50</string>
     <string name="food_preparation_time">Food Preparation Time</string>
     <string name="submit_data">Submit Data</string>
     <string name="reset">Reset</string>

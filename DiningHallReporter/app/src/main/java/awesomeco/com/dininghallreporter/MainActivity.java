@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private ArrayAdapter<String> itemAdapter;
     private ArrayAdapter<String> vendAdapter;
 
-    private final int MEDIAN = R.integer.median;
+    private final int MEDIAN = getResources().getInteger(R.integer.median);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -14,16 +14,13 @@ public class Report {
     private String vendor;
     private int lineTime;
     private int prepTime;
-    private Calendar reportTime;
 
-    private final int MEDIAN = R.integer.median;
 
     public Report() {
         diningHall = "";
         vendor = "";
-        lineTime = MEDIAN;
-        prepTime = MEDIAN;
-        reportTime = Calendar.getInstance();
+        lineTime = 25;
+        prepTime = 25;
     }
 
     public String getDiningHall() {
@@ -42,10 +39,6 @@ public class Report {
         return prepTime;
     }
 
-    public Calendar getReportTime() {
-        return reportTime;
-    }
-
     public void setDiningHall(String hall) {
         diningHall = hall;
     }
@@ -62,29 +55,17 @@ public class Report {
         prepTime = time;
     }
 
-    public void setReportTime(Calendar date) {
-        reportTime = date;
-    }
-
     @Override
     public String toString() {
         // {"ABP at GLC", "", "Tuesday", 23, 13, 51, 33, 13}
         SimpleDateFormat sdf = new SimpleDateFormat("EEEE", Locale.US);
-        String dayOfWeek = sdf.format(reportTime.getTime());
-        String hour = Integer.toString(reportTime.HOUR_OF_DAY);
-        String minute = Integer.toString(reportTime.MINUTE);
-        String second = Integer.toString(reportTime.SECOND);
+        String dayOfWeek = sdf.format(Calendar.DAY_OF_WEEK);
+        String hour = String.format("%s", Calendar.HOUR_OF_DAY);
+        String minute = String.format("%s", Calendar.MINUTE);
+        String second = String.format("%s", Calendar.SECOND);
         return "{\"" + diningHall + "\", \"" + vendor + "\", \"" + dayOfWeek + "\", " + hour +
                 ", " + second + ", " + String.format("%s", lineTime) + ", " +
                 String.format("%s", prepTime) + "}";
-    }
-
-    public void clear() {
-        diningHall = "";
-        vendor = "";
-        lineTime = MEDIAN;
-        prepTime = MEDIAN;
-        reportTime = Calendar.getInstance();
     }
 
 }
