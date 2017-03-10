@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">DiningHallReporter</string>
+    <string name="median">25</string>
+    <string name="food_preparation_time">Food Preparation Time</string>
+    <string name="submit_data">Submit Data</string>
+    <string name="reset">Reset</string>
+    <string name="time_in_line">Time in Line</string>
+    <string name="food_vendor">Food Vendor</string>
+    <string name="select_a_dining_hall">Select a Dining Hall</string>
+    <string name="text_view">Text View</string>
     <string-array name="dininghalls">
         <item>ABP at GLC</item>
         <item>ABP at Goodwin</item>

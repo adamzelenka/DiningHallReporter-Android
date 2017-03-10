@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
     private ArrayAdapter<String> itemAdapter;
     private ArrayAdapter<String> vendAdapter;
 
+    private final int MEDIAN = R.integer.median;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
                 String entry = (String) parent.getItemAtPosition(position);
                 myReport.setDiningHall(entry);
+                myReport.setVendor("");
                 displayVendorList(entry);
             }
         });
@@ -79,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 timeInLine = progress;
-                lineTimeTextView.setText(Integer.toString(timeInLine));
+                lineTimeTextView.setText(String.format("%s", timeInLine));
                 myReport.setLineTime(timeInLine);
             }
 
@@ -99,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 timeInPrep = progress;
-                prepTimeTextView.setText(Integer.toString(timeInPrep));
+                prepTimeTextView.setText(String.format("%s", timeInPrep));
                 myReport.setPrepTime(timeInPrep);
             }
 
@@ -139,8 +142,8 @@ public class MainActivity extends AppCompatActivity {
     public void reset() {
         foodVendors.setAdapter(new ArrayAdapter<String>(this,R.layout.foodvendors,new String[0]));
         diningHalls.setAdapter(itemAdapter);
-        lineTimeBar.setProgress(25);
-        prepTimeBar.setProgress(25);
+        lineTimeBar.setProgress(MEDIAN);
+        prepTimeBar.setProgress(MEDIAN);
         myReport = new Report();
     }
 
